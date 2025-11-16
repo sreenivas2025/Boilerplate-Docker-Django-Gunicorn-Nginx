@@ -17,7 +17,7 @@ services:
   nginx:
     image: pagespeed/nginx-pagespeed:latest
     ports:
-      - 80:80
+      - 8090:80
     volumes:
       - ./config/nginx/conf.d:/etc/nginx/conf.d
       - static_volume:/opt/services/djangoapp/static  # <-- bind the static volume
